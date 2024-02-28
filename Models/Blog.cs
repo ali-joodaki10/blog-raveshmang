@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace BlogApp.Models
@@ -16,6 +17,8 @@ namespace BlogApp.Models
         public string Description { get; set; }
         [Display(Name = "تاریخ ایجاد")]
         public DateTime CreateTime { get; set; }
+
+        public ICollection<Comment> Comments { get; set; }
 
     }
 }

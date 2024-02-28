@@ -11,6 +11,7 @@ namespace BlogApp.Models
         }
 
         public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,7 +23,10 @@ namespace BlogApp.Models
                 Blog.Property(e=>e.Title).HasMaxLength(500);
 
                 Blog.Property(e=>e.Title).HasColumnName("blogTitle");
+
             });
+
+            //modelBuilder.Entity<Comment>().HasOne(c=>c.Blog).WithMany(c=>c.Comments).HasForeignKey(c=>c.BlogId);
         }
     }
 }

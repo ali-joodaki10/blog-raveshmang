@@ -7572,11 +7572,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\learn .net\\blog\\BlogApp\\BlogApp.csproj",
+      "projectUniqueName": "D:\\learn .net\\git\\blog-raveshmang\\BlogApp.csproj",
       "projectName": "BlogApp",
-      "projectPath": "D:\\learn .net\\blog\\BlogApp\\BlogApp.csproj",
+      "projectPath": "D:\\learn .net\\git\\blog-raveshmang\\BlogApp.csproj",
       "packagesPath": "C:\\Users\\Parsan Afzar\\.nuget\\packages\\",
-      "outputPath": "D:\\learn .net\\blog\\BlogApp\\obj\\",
+      "outputPath": "D:\\learn .net\\git\\blog-raveshmang\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Parsan Afzar\\AppData\\Roaming\\NuGet\\NuGet.Config",

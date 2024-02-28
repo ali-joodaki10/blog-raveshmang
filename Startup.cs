@@ -1,4 +1,5 @@
 using BlogApp.Models;
+using BlogApp.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,8 @@ namespace BlogApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.AddTransient<>
+
+            services.AddTransient<IBlogService, BlogService>();
 
             services.AddDbContext<DataBaseContext>(opt =>
             {
